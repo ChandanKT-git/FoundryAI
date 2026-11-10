@@ -1,0 +1,154 @@
+{
+  "project_identity": {
+    "name": "FoundryAI",
+    "tagline": "Autonomous AI Software Engineering Platform",
+    "concept": "IDE-inspired engineering control room with dark obsidian surfaces, streaming code telemetry, 5-stage pipeline, 3-pane workspace, live previews, and version controls.",
+    "app_type": "saas_app",
+    "theme": "dark"
+  },
+  "design_archetype": {
+    "primary_archetype": "ARCHETYPE 4: SWISS & HIGH-CONTRAST / TACTICAL MINIMALISM",
+    "vibe": "Command-center precision, high density IDE workspace, low-latency live telemetry",
+    "dark_mode_anchor": "#0B0F19",
+    "card_surface": "#111827",
+    "subtle_border": "#1F2937"
+  },
+  "colors": {
+    "background": {
+      "main": "#0B0F17",
+      "sidebar": "#0D131F",
+      "pane": "#111827",
+      "pane_hover": "#1F293D",
+      "code_editor": "#080C14",
+      "glass_overlay": "rgba(15, 23, 42, 0.85)"
+    },
+    "text": {
+      "primary": "#F9FAFB",
+      "secondary": "#9CA3AF",
+      "muted": "#6B7280",
+      "code_comment": "#4B5563"
+    },
+    "accents": {
+      "cyan_primary": "#00F0FF",
+      "blue_electric": "#3B82F6",
+      "violet_ai": "#8B5CF6",
+      "emerald_ready": "#10B981",
+      "amber_building": "#F59E0B",
+      "ruby_bug": "#EF4444"
+    },
+    "pipeline_stages": {
+      "plan": "#8B5CF6",
+      "architecture": "#3B82F6",
+      "code": "#00F0FF",
+      "tests": "#F59E0B",
+      "review": "#10B981"
+    },
+    "borders": {
+      "subtle": "#1F2937",
+      "active": "#374151",
+      "glow": "rgba(0, 240, 255, 0.3)"
+    }
+  },
+  "typography": {
+    "heading_font": "Plus Jakarta Sans, sans-serif",
+    "body_font": "Inter, sans-serif",
+    "mono_font": "JetBrains Mono, Fira Code, monospace",
+    "scale": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight",
+      "h3": "text-xl sm:text-2xl font-semibold",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-sm sm:text-base leading-relaxed",
+      "mono_label": "font-mono text-xs uppercase tracking-widest text-slate-400",
+      "code_snippet": "font-mono text-xs sm:text-sm leading-6"
+    }
+  },
+  "layout_and_spacing": {
+    "desktop_workspace_layout": "Three-pane IDE layout: Left (File Tree / Project Explorer, 240px-280px), Middle (Tabbed Editor with Code Viewer / Live Preview / Plan / Architecture / Review, flexible main), Right (Agent Chat & Execution Log, 340px-380px)",
+    "mobile_workspace_layout": "Stacked tabbed view (Files | Code & Preview | Agent Chat) with persistent stage status bar",
+    "padding_rules": {
+      "container_internal": "p-4 sm:p-6",
+      "card_padding": "p-5",
+      "compact_toolbar": "px-3 py-2 gap-2",
+      "section_spacing": "py-16 lg:py-24"
+    },
+    "grid_modes": {
+      "projects_dashboard": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5",
+      "metrics_bento": "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4",
+      "features_grid": "grid grid-cols-1 md:grid-cols-3 gap-6"
+    }
+  },
+  "key_views_and_components": {
+    "landing_page": {
+      "signed_out": true,
+      "sections": [
+        "Navigation bar with logo, features, demo link, sign-in CTA",
+        "Hero section with dynamic code generation animation & model badges",
+        "Live interactive simulation / 3-pane interactive preview",
+        "Autonomous Pipeline Breakdown (Plan, Architecture, Code, Tests, Review)",
+        "Supported AI Models Grid (Claude Opus 5.5, Claude Sonnet 5.5, GPT 6 Luna, Gemini 3.1 Pro)",
+        "Social Proof & Developer Testimonials with dark avatars",
+        "CTA Banner & Developer Footer"
+      ]
+    },
+    "auth_pages": {
+      "clerk_styled_card": "Dark obsidian glassmorphism card (`bg-slate-900/90 border border-slate-800 backdrop-blur-md rounded-xl p-8 shadow-2xl`) for Sign-In and Sign-Up flows"
+    },
+    "projects_dashboard": {
+      "elements": [
+        "Header with 'New Project' primary CTA button and search/filter bar",
+        "Status pill badges: Planning (violet), Building (amber), Reviewing (blue), Ready (emerald)",
+        "Project cards displaying title, description, AI model badge, stage status bar, last updated timestamp, quick actions"
+      ]
+    },
+    "new_project_dialog": {
+      "elements": [
+        "Idea description textarea with prompt suggestions",
+        "Model Selector (Claude Opus 5.5, Claude Sonnet 5.5, GPT 6 Luna, Gemini 3.1 Pro) with latency/cost tags",
+        "Target Stack pills (React, FastAPI, Node, Tailwind, Python, PostgreSQL)",
+        "Start Generation CTA button triggering stage transition"
+      ]
+    },
+    "pipeline_view": {
+      "stages": [
+        "1. Plan (PRD & Requirements)",
+        "2. Architecture (System Diagram & API Specs)",
+        "3. Code (File Generator & Syntax Output)",
+        "4. Tests (Unit Test Suite & Verification)",
+        "5. Review (Quality Score & Deployment Approval)"
+      ],
+      "telemetry": "Streaming text, pulsing active indicator, execution logs, live timer, token usage counter"
+    },
+    "workspace_3_pane": {
+      "left_pane": "File Explorer with folder tree, file icons, and file creation button",
+      "middle_pane": "Tabbed content area (Code Editor with line numbers & syntax highlighting, Live Interactive Preview iframe/component, Architecture Diagram tab, Plan tab, Review tab)",
+      "right_pane": "Agent Chat with streaming output, model switcher dropdown, action triggers (e.g., 'Run Tests', 'Apply Fix', 'Refactor')",
+      "top_bar": "Project title, active stage badge, version history trigger, zip download button, bug report button"
+    },
+    "interactive_tools": {
+      "bug_report_modal": "Severity picker (Low, Medium, High, Critical), stack trace input, 'Apply AI Fix' trigger",
+      "version_history_drawer": "Timeline of commits/snapshots with restore button and diff view",
+      "zip_download": "Simulated instant archive download with notification toast"
+    }
+  },
+  "image_urls": {
+    "hero_code_screen": "https://images.unsplash.com/photo-1774901128302-e2bbd154da44?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHwzfHxjeWJlcnB1bmslMjBkZXZlbG9wZXIlMjBzb2Z0d2FyZSUyMGNvZGUlMjBpZGUlMjBkYXJrJTIwdGVybWluYWx8ZW58MHx8fHwxNzk0MzE4Njk2fDA&ixlib=rb-4.1.0&q=85",
+    "terminal_screen": "https://images.unsplash.com/photo-1774901128192-10e5b4921888?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHw0fHxjeWJlcnB1bmslMjBkZXZlbG9wZXIlMjBzb2Z0d2FyZSUyMGNvZGUlMjBpZGUlMjBkYXJrJTIwdGVybWluYWx8ZW58MHx8fHwxNzk0MzE4Njk2fDA&ixlib=rb-4.1.0&q=85",
+    "avatars": [
+      "https://images.unsplash.com/photo-1740252117013-4fb21771e7ca?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHw0fHxzb2Z0d2FyZSUyMGVuZ2luZWVyJTIwcG9ydHJhaXQlMjBwb3J0cmFpdCUyMGF2YXRhcnxlbnwwfHx8fDE3OTQzMTg3MDF8MA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1649123245135-4db6ead931b5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwzfHxzb2Z0d2FyZSUyMGVuZ2luZWVyJTIwcG9ydHJhaXQlMjBwb3J0cmFpdCUyMGF2YXRhcnxlbnwwfHx8fDE3OTQzMTg3MDF8MA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1740252117044-2af197eea287?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwxfHxzb2Z0d2FyZSUyMGVuZ2luZWVyJTIwcG9ydHJhaXQlMjBwb3J0cmFpdCUyMGF2YXRhcnxlbnwwfHx8fDE3OTQzMTg3MDF8MA&ixlib=rb-4.1.0&q=85"
+    ]
+  },
+  "testing_and_accessibility": {
+    "data_testid_convention": "All interactive elements, inputs, buttons, status pills, stage tabs, and key metrics MUST have explicit data-testid attributes in kebab-case (e.g. data-testid=\"new-project-button\", data-testid=\"model-picker-select\", data-testid=\"workspace-tab-code\", data-testid=\"agent-chat-input\").",
+    "contrast_rules": "Text on hover must explicitly define text color (e.g. hover:bg-slate-800 hover:text-white). Dark background contrasts must be at least 4.5:1."
+  },
+  "instructions_to_main_agent": [
+    "Use standard React .js syntax.",
+    "Ensure dark mode aesthetic is uniform across all screens: #0B0F17 main background, #111827 card background, #1F2937 borders.",
+    "Implement Sonner toast notifications for user feedback (e.g., project creation, fix application, version restoration, zip download).",
+    "Ensure every interactive component has explicit data-testid attributes.",
+    "Provide demo projects pre-loaded into state so the user can immediately test the 3-pane IDE workspace, pipeline streaming, bug reports, and version history."
+  ]
+}
